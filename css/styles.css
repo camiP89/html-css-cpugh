@@ -1,19 +1,21 @@
-/* Use import to split up your CSS into manageable chunks */
-@import url("./reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
-@import url("./variables.css");
-/* Feel free to add as many of these imports as you need */
-
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+.alumni-sans {
+  font-family: "Alumni Sans", sans-serif;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.gill-sans-mt {
+    font-family: "Gill Sans MT";
 }
+
+header a,
+ul,
+h1,
+footer {
+    font-family: "Alumni Sans", sans-serif;
+}
+
+h2,
+h3,
+p {
+    font-family: "Gill Sans MT";
+}
+
