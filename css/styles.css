@@ -2,8 +2,8 @@
   font-family: "Alumni Sans", sans-serif;
 }
 
-.gill-sans-mt {
-    font-family: "Gill Sans MT";
+.cantarell {
+    font-family: "Cantarell";
 }
 
 header a,
@@ -16,6 +16,10 @@ footer {
 h2,
 h3,
 p {
-    font-family: "Gill Sans MT";
+    font-family: "Cantarell";
 }
+
+
+
+    
 
