@@ -1,0 +1,40 @@
+.order-success {
+    margin-top: 200px;
+}
+
+body {
+    font-family: "Cantarell";
+}
+
+.p-1 {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.p-2 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    height: 100vh;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.green-tick i {
+    font-size: 6rem;
+    color: green;
+    margin-bottom: 20px;
+}

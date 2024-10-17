@@ -1,25 +1,87 @@
-.alumni-sans {
-  font-family: "Alumni Sans", sans-serif;
-}
-
-.cantarell {
+body {
     font-family: "Cantarell";
+    background-color: #69868C;
 }
 
-header a,
-ul,
-h1,
-footer {
-    font-family: "Alumni Sans", sans-serif;
+.mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-h2,
-h3,
-p {
-    font-family: "Cantarell";
+.mobile-header i {
+    font-size: 1.5rem;
+    color: #113340;
 }
 
+nav,
+#menu-checkbox {
+    display: none;
+}
 
+#menu-checkbox:checked + nav {
+    display: block;
+}
 
-    
+header {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+nav {
+    position: absolute;
+    background: #d9d9d9;
+    width: 100%;
+    left: 0px
+    top: 50px;
+    z-index: 10;
+}
+
+nav a {
+    display: block;
+    color: #113340;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #113340;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .hamburger-icon, 
+    .mobile-header {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        justify-content: space-around;
+        color: #fff;
+        padding: 0 15px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+        nav a:not(:last-child)::after {
+        content: " . ";
+        color: #fff;
+        padding-left: 10px;   
+    }
+
+    nav a:hover,
+    nav a:focus {
+        text-decoration: underline;
+    }
+
+    nav a i {
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+}
 

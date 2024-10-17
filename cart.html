@@ -5,73 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Items added to your cart will be visable here, check cart before proceeding to checkout."/>
     <title>RainyDays | Cart</title>
-    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/bfed71705b.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png"> 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
+        <div class="mobile-header">
+            <label for="menu-checkbox" class="hamburger-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+            </div>
+            <input type="checkbox" id="menu-checkbox">
         <nav>
-            <ul>
-                <li><a href="arctic-collection.html">Arctic Collection</a></li>
-                <li><a href="rainy-bow-jackets.html">Rainy-Bow Jackets</a></li>
-                <li><a href="ski-jackets.html">Ski Jackets</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><img src="assets/images/Cart-Alt--Streamline-Iconoir.png" alt="shopping-trolley"></a></li>
-                <li><a href="cart.html">Cart</a></li> 
-            </ul>
+            <a href="arctic-collection.html">Arctic Collection</a>
+            <a href="rainy-bow-jackets.html">Rainy-Bow Jackets</a>
+            <a href="ski-jackets.html">Ski Jackets</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i>Cart  
+            </a>
         </nav>
         <div class="logo-container">
-            <a href="index.html"><img src="assets/images/rainy-days-logo.png" alt="RainyDays logo" class="logo"></a>
+            <a href="index.html">
+              <img src="assets/images/rainydayslogo.png" alt="RainyDays logo" class="logo" />
+            </a>
         </div>
     </header>
     <main>
-        <h1>CART</h1>
-        <section>
+        <section class="items-in-basket">
+            <h1>CART</h1>
             <h2>CHECK YOUR CART ITEMS BEFORE PROCEEDING TO CHECKOUT.</h2>
-            <img src="assets/images/rainy-bow-blue.jpg" alt="rainy-bow-jacket-blue color">
-            <h3>RAINY-BOW-BLUE £159</h3>
-            <p>Size: L</p>
-            <p>color: Light-Blue</p>
-            <img src="assets/images/Trash--Streamline-Iconoir.png" alt="Rubbish icon to remove unwanted item from cart.">
-            <p>Edit Order</p>
+            <div class="cart item">
+              <img src="assets/images/rainy-bow-blue.jpg" alt="rainy-bow-jacket-blue color" class="blue-jacket">
+              <h3>RAINY-BOW-BLUE £159</h3>
+              <p>Size: L</p>
+              <p>color: Light-Blue</p>
+              <div class="item-actions">
+                <img src="assets/images/Trash--Streamline-Iconoir.png" alt="Rubbish icon to remove unwanted item from cart." class="bin">
+                <p>Edit Order</p>
+              </div>
+            </div>
             <div>
-                <img src="assets/images/pro-insulate-jacket.jpg" alt="Pro insulate jacket from Ski Collection">
+                <img src="assets/images/pro-insulate-jacket.jpg" alt="Pro insulate jacket from Ski Collection" class="ski-jacket">
                 <h4>PRO INSULATE JACKET £179</h4>
                 <p>Size: L</p>
                 <p>color: Orange/Grey</p>
+                <div class="item-actions">
                 <img src="assets/images/Trash--Streamline-Iconoir.png" alt="Rubbish icon to remove unwanted item from cart.">
                 <p>Edit Order</p>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="summary">
             <h5>SUMMARY</h5>
             <p>Promocode:</p>
-            <form method="POST">Promocode</form>
-            <input type="text" name="Promocode" id="promocode">
-            <button>APPLY</button>
+            <form method="POST" action="/apply-promocode">
+            <input type="text" name="Promocode" id="promocode" placeholder="Enter Promocode">
+            <button type="submit">APPLY</button>
+            </form>
             <p>Total: £338.00</p>
             <p>Shipping: £0.00</p>
             Total cost: £338.00
-            <button>PROCEED TO CHECKOUT</button>
+            <a ref="checkout.html" class="cta" href="checkout.html">Proceed to checkout</a>
         </section>
     </main>
     <footer>
-        <ul class="footer-links">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="terms-and-conditions.html">TERMS & CONDITIONS</a></li>
-        </ul> 
-        <ul class="social-icons">
-            <li><a href="https://x.com"><img src="assets/images/twitter.png" alt="twitter"></a></li>
-            <li><a href="https://www.facebook.com"><img src="assets/images/facebook.png" alt="facebook"></a></li>
-            <li><a href="https://www.youtube.com"><img src="assets/images/youtube.png" alt="twitter"></a></li>
-            <li><a href="https://www.instagram.com"><img src="assets/images/instagram.png" alt="twitter"></a></li>
-        </ul> 
+        <div class="footer-links">
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="terms-and-conditions.html">TERMS & CONDITIONS</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a> 
+        </div> 
     </footer>
 </body>
 </html>
