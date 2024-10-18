@@ -1,0 +1,21 @@
+.logo-container {
+    position: relative;
+    background-image: url(../assets/images/beach-yellow-jacket.jpg);
+    min-height: 879px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 0px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .logo-container {
+        min-height: 281px;
+    }
+}

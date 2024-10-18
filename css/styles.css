@@ -1,3 +1,10 @@
+header,
+footer,
+h1,
+h2 {
+    font-family: "Alumni sans";
+}
+
 body {
     font-family: "Cantarell";
     background-color: #69868C;
@@ -26,7 +33,7 @@ nav,
 
 header {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav {
@@ -64,10 +71,11 @@ nav a {
         justify-content: space-around;
         color: #fff;
         padding: 0 15px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: uppercase;
         position: relative;
     }
+
         nav a:not(:last-child)::after {
         content: " . ";
         color: #fff;
@@ -82,6 +90,88 @@ nav a {
     nav a i {
         font-size: 1.2rem;
         margin-left: 5px;
+    }
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+
+}
+
+.logo {
+    max-width: 257px;
+    height: auto;
+}
+
+footer {
+    background-color: #113340;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer-links, 
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:600px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+    
+    .footer-links {
+        justify-content: space-evenly;
+        flex-grow: 1;
+        margin-right: 20px;
+    }
+
+    .social-icons {
+        justify-content: space-evenly;
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+
+    .footer-links a,
+    .social-icons a {
+        padding: 0 10px;
+    }
+
+        footer a:not(:last-child)::after {
+        color: #fff;
+        padding-left: 10px;  
+
+    }
+
+        footer a:hover,
+        footer a:focus {
+        text-decoration: underline;
     }
 }
 
