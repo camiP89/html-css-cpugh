@@ -1,21 +1,213 @@
+h1,
+h2,
+p {
+    font-family: "Cantarell";
+    color: #fff;
+    font-size: 1rem
+}
+
+h1,
+h2 {
+    text-decoration: underline;
+}
+
 .logo-container {
-    position: relative;
     background-image: url(../assets/images/beach-yellow-jacket.jpg);
-    min-height: 879px;
+    min-height: 520px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-    margin-top: 0px;
-    width: 100%;
+    background-position: center;
+    max-width: 100%;
+    display-inline: block;
 }
 
-@media (max-width: 600px) {
-    .logo {
-        max-width: 300px;
-        margin: 0 auto;
-    }
+.logo {
+    padding-top: 10px;
+}
 
+@media (min-width: 600px) {
     .logo-container {
-        min-height: 281px;
+        position: relative;
+        background-image: url(../assets/images/beach-yellow-jacket.jpg);
+        min-height: 879px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        margin-top: 0px;
+        width: 100%;
+      }
+
+      .logo {
+        padding-top: 20px;
+      }
+
+}
+
+.slogan-section {
+    display: flex;
+    justify-content: center;
+}
+
+.slogan {
+    width: 100%;
+    max-width: 450px;
+    height: 49px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .slogan {
+        width: 100%;
+        max-width: 1300px;
+        height: auto;
+        margin-top: 15px;
     }
 }
+
+.arctic-section, 
+.advert-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #113340;
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.arctic__image,
+.canoe__image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .arctic-section,
+    .advert-section {
+        flex: 1;
+        margin: 20px 20px;
+        max-width: 100%;
+    }
+
+    .arctic__image,
+    .canoe__image {
+        max-width: 100%;
+    }
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cta {
+    width: 105px;
+    height: 30px;
+    background-color: #f2b544;
+    color: #113340;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-align: center;
+}
+  
+@media (min-width: 600px) {
+    .cta {
+        width: 213px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .cta-container {
+    
+    }
+}  
+
+.rainy-bow-section {
+    display: flex;
+    align-items: center;
+    background-color: #113340;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.rainy-bow__image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+    .rainy-bow-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rainy-bow__image {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: fit-content;
+        height: auto;
+    }
+}
+
+.ski_section {
+    display: flex;
+    align-items: center;
+    background-color: #113340;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.skiing__image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.p-ski {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (min-width 600px) {
+    .ski-section {
+        position: relative;
+        width: 50%;
+    }
+
+    .skiing__image {
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+
+    .p-ski {
+        float: right;
+    }
+}
+

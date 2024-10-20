@@ -163,14 +163,14 @@ footer a {
         padding: 0 10px;
     }
 
-        footer a:not(:last-child)::after {
+    footer a:not(:last-child)::after {
         color: #fff;
         padding-left: 10px;  
 
     }
 
-        footer a:hover,
-        footer a:focus {
+    footer a:hover,
+    footer a:focus {
         text-decoration: underline;
     }
 }
