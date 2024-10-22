@@ -2,18 +2,29 @@ header,
 footer,
 h1,
 h2 {
-    font-family: "Alumni sans";
+    font-family: "Alumni sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    background-color: #113340;
+    color: #f2b544;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+    width: 50%;
+    height: 30px;
+    padding: 5px 20px; 
 }
 
 body {
-    font-family: "Cantarell";
+    font-family: "Cantarell", Georgia, 'Times New Roman', Times, serif;
     background-color: #69868C;
 }
 
 .mobile-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
@@ -107,71 +118,72 @@ nav a {
     height: auto;
 }
 
-footer {
-    background-color: #113340;
-    text-align: center;
-    padding: 10px 0;
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-footer a {
+.cta {
+    width: 105px;
+    height: 30px;
+    background-color: #f2b544;
+    color: #113340;
     text-decoration: none;
-    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-align: center;
+}
+  
+@media (min-width: 600px) {
+    .cta {
+        width: 223px;
+        height: 42px;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+.size-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.size-button {
+    background-color: #f2b544;
+    color: #113340;
+    border-radius: 10px;
+    border: 1px solid #113340;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 53px;
+    height: 37px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
     font-size: 1rem;
 }
 
-.footer-links, 
-.social-icons {
+.size-button:hover {
+    background-color: #113340;
+    color: #fff;
+}
+
+.size-button.selected {
+    background-color: #113340;
+    color: #fff;
+}
+
+footer {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-evenly;
+    background-color: #113340;
+
 }
-
-@media (max-width: 600px) {
-    .footer-links {
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-
-    .social-icons {
-        justify-content: center;
-        margin-top: 10px;
-    }
-}
-
-@media (min-width:600px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 50px;
-    }
-    
-    .footer-links {
-        justify-content: space-evenly;
-        flex-grow: 1;
-        margin-right: 20px;
-    }
-
-    .social-icons {
-        justify-content: space-evenly;
-        flex-grow: 1;
-        margin-left: 20px;
-    }
-
-    .footer-links a,
-    .social-icons a {
-        padding: 0 10px;
-    }
-
-    footer a:not(:last-child)::after {
-        color: #fff;
-        padding-left: 10px;  
-
-    }
-
-    footer a:hover,
-    footer a:focus {
-        text-decoration: underline;
-    }
-}
-

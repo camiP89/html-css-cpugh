@@ -21,17 +21,17 @@
             <label for="menu-checkbox" class="hamburger-icon">
                 <i class="fa-solid fa-bars"></i>
             </label>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="user">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="cart">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <input type="checkbox" id="menu-checkbox">
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
         <nav>
             <a href="arctic-collection.html">Arctic Collection</a>
             <a href="rainy-bow-jackets.html">Rainy-Bow Jackets</a>
@@ -76,33 +76,28 @@
                 <input type="address" id="address" name="address" placeholder="Enter Post code" required/>
             </div>
             <h3>Payment information</h3>
-            <form action="/checkout-success.html">
-                <div>
-                    <label for="Name-on-card">NAME ON CARD:</label><br>
-                    <input type="text" id="full-name" name="name-on card" placeholder="Enter name on card" required/>
-                </div>
-                <div>
-                    <label for="cnn">CREDIT CARD NUMBER:</label><br>
-                    <input type="tel" id="cnn" name="full-name" placeholder="xxxx xxxx xxxx xxxx" 
-                    inputmode="numeric" pattern="[0-9\s]{13,19}" required/>
-                </div>
-                <div>
-                    <label for="expmonth">EXPIRY MONTH:</label><br>
-                    <input type="text" id="full-name" name="expiry month" placeholder="Enter expiry month" required/>
-                </div>
-                <div>
-                    <label for="cnn">EXPIRY YEAR:</label><br>
-                    <input type="tel" id="cnn" name="full-name" placeholder="Enter expiry year" 
-                    inputmode="numeric" required/>
-                </div>
-                <div>
-                    <label for="security-number">CVV:</label><br>
-                    <input type="tel" id="cvv" name="security-code" placeholder="Enter security code" 
-                    inputmode="numeric" required/>
-                </div>
-                <div>
-                    <a class="cta" href="checkout-success.html">BUY NOW</a>
-                </div>
+            <div>
+                <label for="Name-on-card">NAME ON CARD:</label><br>
+                <input type="text" id="full-name" name="name-on card" placeholder="Enter name on card" required/>
+            </div>
+            <div>
+                <label for="card-number">CREDIT CARD NUMBER:</label><br>
+                <input type="tel" id="card-number" name="card-number" placeholder="xxxx xxxx xxxx xxxx" inputmode="numeric" pattern="[0-9\s]{13,19}" required/>
+            </div>
+            <div>
+                <label for="expmonth">EXPIRY MONTH:</label><br>
+                <input type="text" id="full-name" name="expiry month" placeholder="Enter expiry month" required/>
+            </div>
+            <div>
+                <label for="cnn">EXPIRY YEAR:</label><br>
+                <input type="tel" id="cnn" name="full-name" placeholder="Enter expiry year" inputmode="numeric" required/>
+            </div>
+            <div>
+                <label for="security-number">CVV:</label><br>
+                <input type="tel" id="cvv" name="security-code" placeholder="Enter security code" inputmode="numeric" required/>
+            </div>
+            <a class="cta" href="checkout-success.html">BUY NOW</a>
+        </form>
     </main>
     <footer>
         <div class="footer-links">

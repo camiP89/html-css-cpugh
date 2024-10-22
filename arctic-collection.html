@@ -49,37 +49,60 @@
     </header>
     <main>
         <h1>ARCTIC COLLECTION</h1>
-        <section>
-            <img src="assets/images/arctic-collection.jpg" alt="Picture of 7 Jackets from the Arctic Collection." class="arctic_collection" />
-        </section>
-        <section>
+        <section class="arctic-sec-1">
+            <img src="assets/images/arctic-collection.jpg" alt="Picture of 7 Jackets from the Arctic Collection." class="arctic_collection_img" />
             <h2>ARCTIC COLLECTION</h2>
-            <p>£159.00</p>
-            <p>The Arctic-Days jacket is designed with expert technologies ensuring maximum insulation without bulk. Designed with experts in outdoor sports to ensure that comfort and durability are taken into consideration at all times. The Arctic-Days jacket is waterproof, breathable, windproof and can withstand freezing temperatures. 
-                Shell: 100% Polypropylene - Lining: 100% Polyamide</p> 
+            <p class="p-sec-1" >£159.00</p>
         </section>
-        <section>
-            <h3>SELECTION OF 5 COLORS TO CHOOSE FROM</h3>
-            <input type="radio" name="colour" value="color orange" id="color-1">
-            <label for="color-1">Orange</label>
-            <input type="radio" name="colour" value="color light blue" id="color-1">
-            <label for="color-1">Light Blue</label>
-            <input type="radio" name="colour" value="color red" id="color-1">
-            <label for="color-1">Red</label>
-            <input type="radio" name="colour" value="black" id="color-1">
-            <label for="color-1">Red</label>
-            <input type="radio" name="colour" value="dark blue" id="color-1">
-            <label for="color-1">Dark Blue</label>
-        </section>
-        <section>
+        <section class="arctic-sec-2">
+            <h3>SELECTION OF 5 COLORS TO CHOOSE FROM:</h3>
+            <div class="color-option">
+              <input type="radio" name="colour" value="orange" id="color-orange">
+              <label for="color-orange" class=color-label>
+                <span class="color-circle" style="background-color: #fec351;"></span>
+                Orange
+              </label>
+            </div>
+            <div class="color-option">
+                <input type="radio" name="colour" value="color-lightblue" id="color-lightblue">
+                <label for="color-lightblue" class=color-label>
+                  <span class="color-circle" style="background-color: #2f96cb;"></span>
+                  Light Blue
+                </label>
+            </div>
+            <div class="color-option">
+                <input type="radio" name="colour" value="color-red" id="color-red">
+                <label for="color-red" class=color-label>
+                  <span class="color-circle" style="background-color: #dd5652;"></span>
+                  Red
+                </label>
+            </div>
+            <div class="color-option">
+                <input type="radio" name="colour" value="color-black" id="color-black">
+                <label for="color-black" class=color-label>
+                  <span class="color-circle" style="background-color: #12191f;"></span>
+                  Black
+                </label>
+            </div>
+            <div class="color-option">
+                <input type="radio" name="colour" value="color-darkblue" id="color-darkblue">
+                <label for="color-darkblue" class=color-label>
+                  <span class="color-circle" style="background-color: #356a7b;"></span>
+                  Dark Blue
+                </label>
+            </div>
             <h4>CHOOSE YOUR SIZE:</h4>
-            <button>XS</button>
-            <button>S</button>
-            <button>L<Meta:edge></Meta:edge></button>
-            <button>XL</button>
-            <button>2XL</button>
+            <div class="size-container">
+              <button class="size-button">XS</button>
+              <button class="size-button">S</button>
+              <button class="size-button">L</button>
+              <button class="size-button">XL</button>
+              <button class="size-button">2XL</button>
+            </div>
             <a class="cta" href="cart.html">add to cart</a>
             <button><i class="fa-regular fa-heart"></i></button>
+            <p>The Arctic-Days jacket is designed with expert technologies ensuring maximum insulation without bulk. Designed with experts in outdoor sports to ensure that comfort and durability are taken into consideration at all times. The Arctic-Days jacket is waterproof, breathable, windproof and can withstand freezing temperatures. 
+                Shell: 100% Polypropylene - Lining: 100% Polyamide</p> 
         </section>
     </main>
     <footer>
