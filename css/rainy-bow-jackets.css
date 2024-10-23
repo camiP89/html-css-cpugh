@@ -1,0 +1,54 @@
+h2 {
+    display: flex;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 80px;
+    letter-spacing: 2px;
+    justify-content: flex-start;
+}
+
+.price {
+    display: flex;
+    color: #fff;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+h3 {
+   display: none;
+}
+
+p {
+    display: none;
+}
+
+.cta {
+    display: none;
+}
+
+.like-button {
+    display: none;
+}
+
+.size-button {
+    display: none;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    background-color: #113340;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.jacket {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+@media (min-width: 600px) 

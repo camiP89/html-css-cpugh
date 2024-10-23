@@ -1,1 +1,63 @@
+.about__image {
+    min-height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    display-inline: block;
+}
+
+h2 {
+    font-family: "Alumni sans"; 
+    display: flex;
+    font-size: 1.5rem;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+h2 {
+    background-image: url(../assets/images/hiking-mountains.jpg);
+    max-width: 380px;
+    height: 186px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    margin-top: 0px;
+    padding: 5px;
+    margin-bottom: 0px;
+ 
+}
+
+.writing {
+    background-color: rgb(205, 215, 215);
+    padding: 40px;
+    margin-top: 0px;
+}
+
+@media (min-width: 600px) {
+    h2 {
+    min-height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    padding-top: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #000;
+        letter-spacing: 2px;
+        font-weight: 700;
+        justify-content: center;
+    }
+
+    .writing {
+        font-size: 1.7rem;
+    }
+}
+
 

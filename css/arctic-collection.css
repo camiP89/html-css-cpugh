@@ -36,7 +36,7 @@ h4 {
     height: auto;
   }
   
-  @media (min-width: 600px) {
+@media (min-width: 600px) {
     .artic-sec-1 {
         display: grid;
         flex-direction: row;
@@ -53,11 +53,12 @@ h4 {
     .arctic__image {
         max-width: 100%;
     }
-  }
+}
   
 .arctic-sec-2 {
-    background-color: #fff;
+    background-color: rgb(205, 215, 215);
     margin-top: -17px;
+    padding: 20px;
 }
 
 input[type="radio"] {
@@ -84,3 +85,17 @@ input[type="radio"] {
 input[type="radio"]:checked + .color-label .color-circle {
     border: 2px solid #000;
 }
+
+.info {
+    font-size: 1rem;
+}
+
+.like-button {
+    margin-left: 50%;
+}
+
+.size-container {
+    display: flex;
+    gap: 10px;
+}
+
