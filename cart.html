@@ -77,18 +77,22 @@
         </section>
         <section class="summary-section">
             <p class="summary">SUMMARY:</p>
-            <p class="promo">Promocode:</p>
-            <form method="POST" action="/apply-promocode">
-            <input type="text" name="Promocode" id="promocode" placeholder="Enter Promocode">
-            <button type="submit">APPLY</button>
+            <form class="form">
+                <div class="input-box">
+                  <label>promocode:</label>
+                  <input type="text" placeholder="Enter promocode">
+                  <button class="submit">APPLY</button>
+                </div>
             </form>
-            <p class="cost">Total: £338.00</p>
-            <hr class="h-2">
-            <p class="shipping">Shipping: £0.00</p>
-            <hr class="h-2">
-            <p class="total">Total cost: £338.00</p>
-            <hr class="h-2">
-            <a ref="checkout.html" class="cta" href="checkout.html">Proceed to checkout</a>
+            <div total>
+              <p class="cost">Total: £338.00</p>
+              <hr class="h-2">
+              <p class="shipping">Shipping: £0.00</p>
+              <hr class="h-2">
+              <p class="total">Total cost: £338.00</p>
+              <hr class="h-2">
+              <a ref="checkout.html" class="cta" href="checkout.html">Proceed to checkout</a>
+            </div>
         </section>
     </main>
     <footer> 

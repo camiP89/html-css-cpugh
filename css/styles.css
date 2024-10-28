@@ -68,10 +68,18 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover,
+nav a:checked {
+        text-decoration: underline;
+        background-color: #113340;
+        color: #fff;
+    }
+
 @media (min-width: 600px) {
     nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
         background-color: #113340;
         padding: 10px 0;
         position: relative;
@@ -84,15 +92,14 @@ nav a {
 
     nav a {
         display: inline-block;
-        justify-content: space-around;
         color: #fff;
         padding: 0 15px;
-        font-size: 1.rem;
+        font-size: 1rem;
         text-transform: uppercase;
         position: relative;
     }
 
-        nav a:not(:last-child)::after {
+    nav a:not(:last-child)::after {
         content: " . ";
         color: #fff;
         padding-left: 10px;   
