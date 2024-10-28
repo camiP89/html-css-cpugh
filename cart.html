@@ -48,44 +48,50 @@
         </div>
     </header>
     <main>
+        <h1>CART</h1>
         <section class="items-in-basket">
-            <h1>CART</h1>
-            <h2>CHECK YOUR CART ITEMS BEFORE PROCEEDING TO CHECKOUT.</h2>
+            <p class="check-items">CHECK YOUR CART ITEMS BEFORE PROCEEDING TO CHECKOUT.</p>
             <div class="cart item">
-              <img src="assets/images/rainy-bow-blue.jpg" alt="rainy-bow-jacket-blue color" class="blue-jacket">
-              <h3>RAINY-BOW-BLUE £159</h3>
-              <p>Size: L</p>
-              <p>color: Light-Blue</p>
-              <div class="item-actions">
-                <img src="assets/images/Trash--Streamline-Iconoir.png" alt="Rubbish icon to remove unwanted item from cart." class="bin">
-                <p>Edit Order</p>
+              <img src="assets/images/rainy-bow-blue.jpg" alt="rainy-bow-jacket-blue color" class="jacket">
+              <p class="item-name">RAINY-BOW-BLUE</p>
+              <p class="price">£159</p>
+              <p class="size">Size: L</p>
+              <p class="color">color: Light-Blue</p>
+              <div class="trash">
+                <i class="fa-solid fa-trash-can"></i>
+                <p class="edit">Edit Order</p>
               </div>
             </div>
+            <hr class="h">
             <div>
-                <img src="assets/images/pro-insulate-jacket.jpg" alt="Pro insulate jacket from Ski Collection" class="ski-jacket">
-                <h4>PRO INSULATE JACKET £179</h4>
+                <img src="assets/images/pro-insulate-jacket.jpg" alt="Pro insulate jacket from Ski Collection" class="jacket">
+                <p class="item-name">PRO INSULATE JACKET</p>
+                <p class="price">£179</p>
                 <p>Size: L</p>
                 <p>color: Orange/Grey</p>
-                <div class="item-actions">
-                <img src="assets/images/Trash--Streamline-Iconoir.png" alt="Rubbish icon to remove unwanted item from cart.">
-                <p>Edit Order</p>
+                <div class="trash">
+                   <i class="fa-solid fa-trash-can"></i>
+                   <p>Edit Order</p>
                 </div>
             </div>
         </section>
-        <section class="summary">
-            <h5>SUMMARY</h5>
-            <p>Promocode:</p>
+        <section class="summary-section">
+            <p class="summary">SUMMARY:</p>
+            <p class="promo">Promocode:</p>
             <form method="POST" action="/apply-promocode">
             <input type="text" name="Promocode" id="promocode" placeholder="Enter Promocode">
             <button type="submit">APPLY</button>
             </form>
-            <p>Total: £338.00</p>
-            <p>Shipping: £0.00</p>
-            Total cost: £338.00
+            <p class="cost">Total: £338.00</p>
+            <hr class="h-2">
+            <p class="shipping">Shipping: £0.00</p>
+            <hr class="h-2">
+            <p class="total">Total cost: £338.00</p>
+            <hr class="h-2">
             <a ref="checkout.html" class="cta" href="checkout.html">Proceed to checkout</a>
         </section>
     </main>
-    <footer>
+    <footer> 
         <div class="footer-links">
             <a href="about.html">ABOUT</a>
             <a href="contact.html">CONTACT</a>

@@ -49,55 +49,61 @@
     </header>
     <main>
         <h1>checkout</h1>
-        <h2>shipping information</h2>
-        <form action="/contact-success.html">
-            <div>
-                <label for="first-name">FIRST NAME:</label><br>
-                <input type="text" id="first-name" name="full-name" placeholder="Enter first name" required/>
-            </div>
-            <div>
-                <label for="last-name">LAST NAME:</label><br>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required/>
-            </div>
-            <div>
-                <label for="address">ADDRESS:</label><br>
-                <input type="address" id="address" name="address" placeholder="Enter address" required/>
-            </div>
-            <div>
-                <label for="address">CITY:</label><br>
-                <input type="address" id="address" name="address" placeholder="Enter City" required/>
-            </div>
-            <div>
-                <label for="address">COUNTY:</label><br>
-                <input type="address" id="address" name="address" placeholder="Enter County" required/>
-            </div>
-            <div>
-                <label for="address">POST CODE:</label><br>
-                <input type="address" id="address" name="address" placeholder="Enter Post code" required/>
-            </div>
-            <h3>Payment information</h3>
-            <div>
-                <label for="Name-on-card">NAME ON CARD:</label><br>
-                <input type="text" id="full-name" name="name-on card" placeholder="Enter name on card" required/>
-            </div>
-            <div>
-                <label for="card-number">CREDIT CARD NUMBER:</label><br>
-                <input type="tel" id="card-number" name="card-number" placeholder="xxxx xxxx xxxx xxxx" inputmode="numeric" pattern="[0-9\s]{13,19}" required/>
-            </div>
-            <div>
-                <label for="expmonth">EXPIRY MONTH:</label><br>
-                <input type="text" id="full-name" name="expiry month" placeholder="Enter expiry month" required/>
-            </div>
-            <div>
-                <label for="cnn">EXPIRY YEAR:</label><br>
-                <input type="tel" id="cnn" name="full-name" placeholder="Enter expiry year" inputmode="numeric" required/>
-            </div>
-            <div>
-                <label for="security-number">CVV:</label><br>
-                <input type="tel" id="cvv" name="security-code" placeholder="Enter security code" inputmode="numeric" required/>
-            </div>
-            <a class="cta" href="checkout-success.html">BUY NOW</a>
-        </form>
+        <section class="container">
+            <p class="shipping-info">shipping information</p>
+            <form action="checkout-success.html" class="form">
+                <div class="input-box">
+                    <label>first name</label>
+                    <input type="text" placeholder="Enter first name">
+                </div>
+                <div class="input-box">
+                    <label>last name</label>
+                    <input type="text" placeholder="Enter last name">
+                </div>
+                <div class="input-box">
+                    <label>address</label>
+                    <input type="text" placeholder="Enter address">
+                </div>
+                <div class="input-box">
+                    <label>city</label>
+                    <input type="text" placeholder="Enter city">
+                </div>
+                <div class="input-box">
+                    <label>county</label>
+                    <input type="text" placeholder="Enter county">
+                </div>
+                <div class="input-box">
+                    <label">post code</label>
+                    <input type="number" placeholder="Enter post code">
+                </div> 
+            </form>
+        </section>
+        <section class="container-2">
+            <p class="payment-info">payment information</p>
+            <form action="checkout-success.html" class="form">
+                <div class="input-box">
+                    <label for="Name-on-card">name on card</label>
+                    <input type="text" placeholder="Enter name on card">
+                </div> 
+                <div class="input-box">
+                    <label for="card-number">card number</label>
+                    <input type="number" placeholder="Enter card number">
+                </div> 
+                <div class="input-box">
+                    <label for="expmonth">expiry month</label>
+                    <input type="text" placeholder="Expiry month">
+                </div> 
+                <div class="input-box">
+                    <label for="cnn">expiry year</label>
+                    <input type="number" placeholder="Enter expiry year">
+                </div> 
+                <div class="input-box">
+                    <label for="security-number">cvv</label>
+                    <input type="number" placeholder="Enter security number">
+                </div> 
+              <a class="cta" href="checkout-success.html">BUY NOW</a>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-links">

@@ -9,6 +9,11 @@ h2 {
     justify-content: flex-start;
 }
 
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .price {
     display: flex;
     color: #fff;
@@ -20,9 +25,10 @@ h2 {
     display: flex;
     align-items: center;
     background-color: #113340;
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin: 20px;
 }
 
 .jacket {
@@ -50,5 +56,107 @@ h2 {
     border-radius: 50%;
     display: inline-block;
     margin-top: 5px;
+}
+
+.info-p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 30px;
+}
+
+.info {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 215, 215);
+    max-width: 100%;
+    margin: 20px;
+}
+
+.cta-container {
+    gap: 20px;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+    h2 {
+        display: flex;
+        font-size: 2rem;
+        text-decoration: underline;
+        color: #fff;
+        padding-left: 20px;
+        padding-top: 10px;
+        letter-spacing: 2.7px;
+        justify-content: flex-start;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 30px;
+    }
+    
+    .price {
+        display: flex;
+        color: #fff;
+        font-size: 2rem;
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+    .info-p {
+        font-size: 1.8rem;
+        max-width: 800px;
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .size-button {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        height: 45px;
+        cursor: pointer;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 1.7rem;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        background-color: #113340;
+        max-width: 100%;
+        padding: 10px;
+        margin: 50px
+    }
+
+    .info {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(205, 215, 215);
+        max-width: 100%;
+        margin: 50px;
+    }
+
+    .color-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .color-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 5px;
+    }
 }
 

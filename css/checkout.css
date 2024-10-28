@@ -1,0 +1,77 @@
+.shipping-info,
+.payment-info {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #113340;
+    text-decoration: underline;
+}
+
+.container,
+.container-2 {
+    position: relative;
+    background-color: rgb(205, 215, 215);
+    max-width: 100%;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+}
+
+.form .input-box {
+    height: 40px;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.input-box label {
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #000;
+    padding-left: 5px;
+    color: #69868C;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.cta {
+    margin: 50px;
+}
+
+
+@media (min-width:600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        max-width: 1600px;
+    }
+
+    h1 {
+        grid-column: 1/-1;
+    }
+
+    .container {
+        margin-left: 50px;
+    }
+
+    .container-2 {
+        margin-right: 50px;
+    }
+    
+    .container,
+    .container-2 {
+        padding: 40px;
+    } 
+}
