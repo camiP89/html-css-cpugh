@@ -28,9 +28,10 @@ body {
 
 .mobile-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
+    position: relative;
 }
 
 .mobile-header i {
@@ -56,7 +57,7 @@ nav {
     position: absolute;
     background: #d9d9d9;
     width: 100%;
-    left: 0px
+    left: 0px;
     top: 50px;
     z-index: 10;
 }
@@ -70,79 +71,24 @@ nav a {
 
 nav a:hover,
 nav a:checked {
-        text-decoration: underline;
-        background-color: #113340;
-        color: #fff;
-    }
-
-@media (min-width: 600px) {
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #113340;
-        padding: 10px 0;
-        position: relative;
-    }
-
-    .hamburger-icon, 
-    .mobile-header {
-        display: none;
-    }
-
-    nav a {
-        display: inline-block;
-        color: #fff;
-        padding: 0 15px;
-        font-size: 1rem;
-        text-transform: uppercase;
-        position: relative;
-    }
-
-    nav a:not(:last-child)::after {
-        content: " . ";
-        color: #fff;
-        padding-left: 10px;   
-    }
-
-    nav a:hover,
-    nav a:focus {
-        text-decoration: underline;
-    }
-
-    nav a i {
-        font-size: 1.2rem;
-        margin-left: 5px;
-    }
-
-    h1 {
-        position: relative;
-        background-color: #113340;
-        color: #f2b544;
-        font-size: 2.5rem;
-        text-decoration: underline;
-        width: 50%;
-        font-weight: bold;
-        height: 60px;
-        padding: 10px 20px;
-        margin-left: 50px;
-    }
+    text-decoration: underline;
+    background-color: #113340;
+    color: #fff;
 }
+
 
 .logo-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    width: 100%;
-
+    margin: 0;
 }
-
+    
 .logo {
     max-width: 257px;
     height: auto;
+    margin: 0;
 }
-
+    
 .cta-container {
     display: flex;
     flex-direction: column; 
@@ -150,7 +96,7 @@ nav a:checked {
     align-items: center;
     margin: 20px;
 }
-
+    
 .cta {
     display: flex;
     justify-content: center;
@@ -169,24 +115,6 @@ nav a:checked {
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-}
-  
-@media (min-width: 600px) {
-    .cta.container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .cta {
-        width: 223px;
-        height: 42px;
-        font-size: 1.5rem;
-        padding: 10px;
-        border: 1px solid #000;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
 }
 
 .size-container {
@@ -272,6 +200,83 @@ footer a:focus {
 }
 
 @media (min-width: 600px) {
+    #menu-checkbox,
+    .hamburger-icon, 
+    .mobile-header {
+        display: none;
+    }
+       
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #113340;
+        padding: 10px 0;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .logo-container {
+        position: relative;
+        justify-content: center;
+        margin: 0;
+    }
+        
+    .logo {
+        padding-top: 20px;
+        margin: 0;
+    }
+
+    nav a {
+        display: inline-block;
+        color: #fff;
+        padding: 0 15px;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        text-decoration: underline;
+    }
+
+    nav a i {
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+
+    h1 {
+        position: relative;
+        background-color: #113340;
+        color: #f2b544;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        width: 50%;
+        font-weight: bold;
+        height: 60px;
+        padding: 10px 20px;
+        margin-left: 50px;
+    }
+
+    .cta.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cta {
+        width: 223px;
+        height: 42px;
+        font-size: 1.5rem;
+        padding: 10px;
+        border: 1px solid #000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
     footer {
         display: flex;
         justify-content: space-evenly;
@@ -281,8 +286,10 @@ footer a:focus {
     .like-button {
         width: 60px;
         height: 60px;
-        font-size: 2rem; {
+        font-size: 2rem; 
     } 
 }
+
+
 
 
