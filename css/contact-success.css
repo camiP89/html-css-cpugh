@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40%;
+    padding-top: 30%;
     background-color: #d9d9d9;
     height: 100vh;
     margin: 20px;
@@ -15,7 +15,7 @@
 }
 
 .message-sent {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
     color: #113340;
