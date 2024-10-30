@@ -1,51 +1,52 @@
-.about__image {
-    min-height: 520px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-}
+
 
 h2 {
     font-family: "Cantarell", Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    color: #000000;
+    color: #113340;
+    background-color: rgb(205, 215, 215);
     letter-spacing: 2px;
     font-weight: bold;
-    background-image: url(../assets/images/hiking-mountains.jpg);
-    max-width: 380px;
-    height: 186px;
-    background-size: cover;
     max-width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 20px;
-    padding: 5px;
+    margin: 20px 20px;
+    padding: 10px;
 }
+
+.hiking_img {
+    background-color: rgb(205, 215, 215);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 20px 20px; 
+    
+}
+
 
 .writing {
     background-color: rgb(205, 215, 215);
-    padding: 40px;
+    padding: 50px;
     margin: 0 20px 20px 20px;
 }
 
 @media (min-width: 600px) {
     h2 {
-        min-height: 520px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        max-width: 100%;
-        padding-top: 10px;
+        font-size: 3rem;
+        padding: 30px;
         margin: 50px;
-        font-size: 4rem;
-        font-weight: 900;
-        padding-top: 0px;
+    }
+
+    .hiking_img {
+        width: calc(100% - 120px);
+        margin: 50px;
+
     }
 
     .writing {
         font-size: 2rem;
+        padding: 150px;
         margin: 50px;
     }
 }
