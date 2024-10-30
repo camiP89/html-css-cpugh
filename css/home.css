@@ -5,10 +5,8 @@ h2 {
     font-size: 1rem;
     text-decoration: underline;
     text-transform: uppercase;
-    text-align: left;
-    margin-left: 20px;
-    width: auto;
-    padding: 10px 20px;
+    margin: 10px 0;
+    padding: 5px 10px;
 }
 
 
@@ -16,6 +14,7 @@ h3 {
     font-family: "Cantarell";
     color: #fff;
     font-size: 1.2rem;
+    text-decoration: underline;
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0;
@@ -48,10 +47,10 @@ p {
 }
 
 .slogan {
-    width: 100%;
-    max-width: 450px;
+    max-width: 100%;
     height: 49px;
-    margin: 30px;
+    width: calc(100% - 40px);
+    margin: 20px 20px;
 }
 
 .cta-container {
@@ -59,18 +58,18 @@ p {
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
     gap: 30px;
 }
 
-.arctic-section, 
+.arctic-collection, 
 .advert-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #113340;
-    width: 100%;
+    width: calc(100% - 40px);
     padding: 10px;
-    margin-bottom: 30px;
+    margin: 0 20px 20px 20px;
     box-sizing: border-box;
 }
 
@@ -86,7 +85,8 @@ p {
     background-color: #113340;
     width: 100%;
     padding: 10px;
-    margin-bottom: 30px;
+    width: calc(100% - 40px);
+    margin: 20px;
     box-sizing: border-box;
 }
 
@@ -99,7 +99,8 @@ p {
     display: flex;
     background-color: #113340;
     flex-direction: column;
-    margin-bottom: 50px;
+    width: calc(100% - 40px);
+    margin: 20px;
 }
 
 .ski-img {
@@ -120,7 +121,6 @@ p {
         background-repeat: no-repeat;
         background-position: top;
         margin-top: 0px;
-        margin-bottom: 50px;
         width: 100%;
     }
 
@@ -131,8 +131,9 @@ p {
     .slogan {
         width: 100%;
         max-width: 1300px;
+        width: calc(100% - 100px);
         height: auto;
-        margin-top: 15px;
+        margin: 50px;
     }
 
     .container {
@@ -171,7 +172,8 @@ p {
 
     .ski_section {
         flex-direction: row;
-        margin: 0px 50px 30px 50px;
+        width: calc(100% - 100px);
+        margin: 0px 50px 50px 50px;
     }
 
     .ski-img,
@@ -185,8 +187,9 @@ p {
     }
 
     h3 {
-        font-size: 3rem;
-        text-align: center
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
     }
 
     .ski-p {
