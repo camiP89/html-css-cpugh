@@ -159,8 +159,8 @@ nav a:checked {
 }
 
 body footer {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    max-width: 100%;
     text-align: center;
     background-color: #113340;
     padding: 10px 20px;
@@ -288,8 +288,23 @@ footer a:focus {
         height: 60px;
         font-size: 2rem; 
     } 
+
+    .footer-links a,
+    footer a {
+        font-size: 1.5rem;
+    }
 }
 
+@media (min-width: 875px) {
+    .footer-links a,
+    footer a {
+       font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+}
 
 
 

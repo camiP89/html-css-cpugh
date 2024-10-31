@@ -3,8 +3,7 @@
     align-items: center;
     background-color: #113340;
     max-width: 100%;
-    padding: 10px;
-    margin-bottom: 0px;
+    padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -39,11 +38,12 @@ h2 {
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .color,
 .choose-size {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: 5px;
     margin: 0;
