@@ -158,6 +158,14 @@ nav a:checked {
     margin-top: 10px;
 }
 
+.like-button:hover {
+    color: red;
+}
+
+.like-button.selected {
+    color: red;
+}
+
 body footer {
     position: relative;
     max-width: 100%;
