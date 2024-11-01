@@ -82,12 +82,13 @@ p {
 
     .contact-details {
         max-width: 100%;
-        margin: 0;
+        margin: 20px 10px 20px 50px;
     } 
 
     .send-message {
         max-width: 100%;
-        margin: 0;
+        width: calc(100% - px);
+        margin: 20px 50px 20px 10px;
     }
 
     .cta {
