@@ -82,6 +82,10 @@ p {
         padding: 10px;
         margin: 50px;
     }
+
+    .jacket {
+        width: 30%;
+    }
 }
 
 
