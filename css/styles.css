@@ -163,7 +163,7 @@ nav a:checked {
 }
 
 .like-button.selected {
-    color: red;
+    background-color: red;
 }
 
 body footer {
