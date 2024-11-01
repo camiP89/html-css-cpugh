@@ -1,10 +1,10 @@
 h2 {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: underline;
     color: #fff;
     padding-left: 20px;
-    padding-top: 80px;
+    padding-top: 40px;
     letter-spacing: 2px;
 }
 
@@ -12,6 +12,7 @@ h2 {
     display: flex;
     color: #fff;
     padding-left: 20px;
+    font-size: 1.2rem;
 }
 
 h3 {
@@ -52,11 +53,11 @@ p {
 @media (min-width: 600px) {
     h2 {
         display: flex;
-        font-size: 2.7rem;
+        font-size: 2rem;
         text-decoration: underline;
         color: #fff;
         padding-left: 20px;
-        padding-top: 50px;
+        padding-top: 40px;
         letter-spacing: 2px;
     }
     
@@ -69,7 +70,7 @@ p {
     .price {
         display: flex;
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-left: 20px;
         justify-content: flex-start;
     }
@@ -85,6 +86,13 @@ p {
 
     .jacket {
         width: 30%;
+    }
+}
+
+@media (min-width: 850px) {
+    h2 {
+        font-size: 2.8rem;
+        padding-top: 40px;
     }
 }
 
