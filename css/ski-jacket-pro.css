@@ -3,9 +3,8 @@
     align-items: center;
     background-color: #113340;
     max-width: 100%;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 10px;
+    margin: 20px;
 }
 
 .jacket {
@@ -30,84 +29,80 @@ h2 {
 }
 
 .info {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(205, 215, 215);
     max-width: 100%;
     padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 20px
+}
+
+
+.info-p {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
 }
 
 .color,
 .choose-size {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 1rem;
     font-weight: bold;
-    padding: 5px;
-    margin: 0;
+    padding: 10px
 }
 
 .size-container {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 600px) {
+    .section {
+        margin: 50px
+    }
+
+    
+    .jacket {
+        width: 30%;
+    }
+
+    .info {
+        margin: 50px;
+        padding: 30px;
+   
+    }
+
     h2 {
-        display: flex;
         font-size: 2.7rem;
-        text-decoration: underline;
-        color: #fff;
-        padding-left: 20px;
-        padding-top: 10px;
-        letter-spacing: 2px;
-        justify-content: flex-start;
     }
     
-    h3 {
-        font-size: 1.5rem;
+    .color,
+    .choose-size {
+        font-size: 1.6rem;
         font-weight: bold;
-        padding-left: 30px;
+        margin-bottom: 30px;
     }
     
     .price {
-        display: flex;
-        color: #fff;
         font-size: 2rem;
         padding-left: 20px;
         justify-content: flex-start;
     }
+
     .info-p {
         font-size: 1.8rem;
         max-width: 800px;
-        padding: 30px;
-        margin: 0 auto;
-    }
-
-    .section {
-        display: flex;
-        align-items: center;
-        background-color: #113340;
-        max-width: 100%;
-        padding: 10px;
-        margin: 50px
-    }
-
-    .info {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(205, 215, 215);
-        max-width: 100%;
-        margin: 50px;
     }
 }
-
 
 
 
