@@ -10,6 +10,26 @@ h2 {
     color: #fff;
     font-size: 1.2;
     padding-left: 20px;
+    margin: 0;
+}
+
+.arctic-sec-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #113340;
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.arctic-sec-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 215, 215);
+    padding: 20px;
+    margin: 20px;
 }
 
 h3, 
@@ -17,30 +37,12 @@ h4 {
     color: #113340;
     font-size: 1rem;
     font-weight: bold;
-    padding-top: 10px;
+    padding: 20px;
     text-decoration: underline;
-}
-
-.arctic-sec-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #113340;
-    max-width: 100%;
-    padding: 10px;
-    margin: 20px;
 }
 
 .arctic__img {
     max-width: 100%;
-}
-
-.arctic-sec-2 {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(205, 215, 215);
-    padding: 20px;
-    margin: 20px;
 }
 
 .color-option {
@@ -54,7 +56,7 @@ h4 {
 .color-label {
     display: flex;
     flex-direction: column;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     align-items: center;
     margin: 5px;
     text-transform: uppercase;
@@ -78,23 +80,97 @@ input[type="radio"] {
 }
 
 .info {
-    font-size: 1rem;
-    max-width: 500px;
-    padding: 20px;
+    font-size: 1.1rem;
+    padding: 0 10px 10px 10px;
+}
+
+.cta-container {
+    gap: 10px;
+    display: flex;
 }
 
 .size-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 600px) {
     .arctic-sec-1 {
         margin: 50px;
+        padding: 20px;
+    }
+
+    h2,
+    .price {
+        font-size: 2rem;
+    }
+  
+    .arctic-sec-2 {
+        margin: 50px;
+        padding: 40px;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .color-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .color-label {
+        font-size: 1.2rem;
+    }
+
+    .color-option {
+        gap: 20px;
+    }
+
+    .info {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 850px) {
+    .arctic-sec-1 {
+        margin: 50px;
+        padding: 30px;
     }
   
     .arctic-sec-2 {
         margin: 50px;
     }
-  }
+
+    h2,
+    .price {
+        font-size: 2.2rem;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    .color-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .color-label {
+        font-size: 1.3rem;
+    }
+
+    .color-option {
+        gap: 50px;
+    }
+
+
+    .info {
+        font-size: 1.7rem;
+        max-width: 900px;
+    }
+}    
     
