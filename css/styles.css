@@ -118,6 +118,13 @@ nav a:checked {
     cursor: pointer;
 }
 
+.cta:hover,
+.cta:focus {
+    color: #f2b544;
+    background-color: #fff
+
+}
+
 .size-container {
     display: flex;
     gap: 5px;
