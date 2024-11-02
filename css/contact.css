@@ -63,7 +63,7 @@ p {
 }
 
 .cta {
-    margin: 20px 0;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -89,11 +89,6 @@ p {
         max-width: 100%;
         width: calc(100% - px);
         margin: 20px 50px 20px 10px;
-    }
-
-    .cta {
-        text-align: center;
-        margin-top: 20px;
     }
 }
 
