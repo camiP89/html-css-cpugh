@@ -15,26 +15,6 @@ h2 {
     font-size: 1.2rem;
 }
 
-h3 {
-   display: none;
-}
-
-p {
-    display: none;
-}
-
-.cta {
-    display: none;
-}
-
-.like-button {
-    display: none;
-}
-
-.size-button {
-    display: none;
-}
-
 .section {
     display: flex;
     align-items: center;
@@ -52,36 +32,16 @@ p {
 
 @media (min-width: 600px) {
     h2 {
-        display: flex;
         font-size: 2rem;
-        text-decoration: underline;
-        color: #fff;
-        padding-left: 20px;
-        padding-top: 40px;
-        letter-spacing: 2px;
     }
-    
-    h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding-left: 30px;
-    }
-    
+
     .price {
-        display: flex;
-        color: #fff;
         font-size: 1.5rem;
-        padding-left: 20px;
-        justify-content: flex-start;
     }
 
     .section {
-        display: flex;
-        align-items: center;
-        background-color: #113340;
-        max-width: 100%;
-        padding: 10px;
         margin: 50px;
+        padding: 20px;
     }
 
     .jacket {
@@ -91,8 +51,20 @@ p {
 
 @media (min-width: 850px) {
     h2 {
-        font-size: 2.8rem;
-        padding-top: 40px;
+        font-size: 3rem;
+        padding-top: 50px;
+    }
+
+    .price {
+        font-size: 2.6rem;
+    }
+
+    .section {
+        padding: 30px;
+    }
+
+    .jacket {
+        padding-right: 30px;
     }
 }
 
