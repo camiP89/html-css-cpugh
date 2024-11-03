@@ -25,6 +25,7 @@ p {
     font-size: 1rem;
     color: #fff;
     padding-left: 10px;
+    text-decoration: none;
 }
 
 .logo-container {
@@ -34,7 +35,7 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;
-    display-inline: block;
+    display: inline-block;
 }
 
 .logo {
@@ -129,7 +130,6 @@ p {
     }
 
     .slogan {
-        width: 100%;
         max-width: 1300px;
         width: calc(100% - 100px);
         height: auto;
@@ -184,7 +184,7 @@ p {
 
     h1,
     h2 {
-        font-size: 1.6rem;'
+        font-size: 1.6rem;
     }
 
     h3 {
