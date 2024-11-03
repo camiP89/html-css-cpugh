@@ -35,7 +35,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;
-    display: inline-block;
 }
 
 .logo {
@@ -130,7 +129,8 @@ p {
     }
 
     .slogan {
-        max-width: 1300px;
+        width: 100%;
+        max-width: 1400px;
         width: calc(100% - 100px);
         height: auto;
         margin: 50px;
